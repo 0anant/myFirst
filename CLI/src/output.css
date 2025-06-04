@@ -8,11 +8,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-teal-500: oklch(70.4% 0.14 182.503);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
+    --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -182,6 +184,14 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+}
+@layer base {
+  div {
+    border-radius: var(--radius-lg);
+    background-color: var(--color-gray-400);
+    padding: calc(var(--spacing) * 4);
+    color: var(--color-white);
   }
 }
 @property --tw-font-weight {
