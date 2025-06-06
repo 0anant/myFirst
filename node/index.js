@@ -22,4 +22,4 @@ console.log(greet4); // This will print the value of greet4 exported from greet.
 
 //path module
 import path from "path";
-console.log(path.basename(__filename)); // This will print the base name of the current file
+console.log(path.basename(__filename)); // This will print the0 base name of the current file

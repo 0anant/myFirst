@@ -1,7 +1,0 @@
-@import "tailwindcss";
-
-@layer base {
-  div {
-    @apply bg-gray-400 text-white p-4 rounded-lg;
-  }
-}
