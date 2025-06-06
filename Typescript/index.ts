@@ -194,20 +194,73 @@ console.log(personTuple); // Output: [ 'Alice', 31 ]
 
 //Enum Types
 //enum types in typescript are used to define a set of named constants, they can be used to create more readable and maintainable code.
-enum Direction {
-    Up = "UP",
-    Down = "DOWN",
-    Left = "LEFT",
-    Right = "RIGHT"
-}
-let move: Direction = Direction.Up;
-console.log(move); // Output: UP
-move = Direction.Down; // Valid
-console.log(move); // Output: DOWN
+// enum Direction {
+//     Up = "UP",
+//     Down = "DOWN",
+//     Left = "LEFT",
+//     Right = "RIGHT",
+// };
+// let move: Direction = Direction.Up;
+// console.log(move); // Output: UP
+// move = Direction.Down; // Valid
+// console.log(move); // Output: DOWN
 // move = "FORWARD"; // Error: Type '"FORWARD"' is not assignable to type 'Direction'.
 // move = 42; // Error: Type 'number' is not assignable to type 'Direction'.
 // move = true; // Error: Type 'boolean' is not assignable to type 'Direction'.
 // move = Direction.Up | Direction.Down; // Error: Type 'Direction.Up | Direction.Down' is not assignable to type 'Direction'.
 // move = Direction.Left | Direction.Right; // Error: Type 'Direction.Left | Direction.Right' is not assignable to type 'Direction'.
 // move = Direction.Up | Direction.Down | Direction.Left | Direction.Right; // Error: Type 'Direction.Up | Direction.Down | Direction.Left | Direction.Right' is not assignable to type 'Direction'.
+
+//Class Types
+//class types in typescript are used to define a blueprint for creating objects, they can be used to create more structured and reusable code.
+class PersonClass {
+    firstName: string;
+    lastName: string;
+    age: number;
+
+    constructor(firstName: string, lastName: string, age: number) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+//Interface Types
+//interface types in typescript are used to define a contract for objects, they can be used to create more structured and type-safe code it specifies the properties and their types an object must have.Interfaces aree a powerful tool for enforcing a certain structure in your code they are used for functions and classes as well as objects.
+//they can be used to define the shape of an object, a function, or a class, and they can be used to create more structured and type-safe code.
+interface PersonInterface {
+    firstName: string;
+    lastName: string;
+    age?: number; // Optional property
+    getFullName(): string;
+} 
+
+//declaration merging
+interface car {
+    brand: string;
+    stop(): void;
+}                   //Original interface declaration
+
+interface car {
+    model: string;
+    start(): void;
+}                   //Merging with another interface declaration
+
+const myCar: car = {
+    brand: "Toyota",
+    model: "Corolla",
+    start() {
+        console.log("Car started");
+    },
+    stop() {
+        console.log("Car stopped");
+    }
+};      //Usage of the extended interface
+
+
+
 
