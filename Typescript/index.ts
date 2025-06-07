@@ -263,4 +263,7 @@ const myCar: car = {
 
 
 
+//generic types
+//generic types in typescript are used to create reusable components that can work with different types, they can be used to create more flexible and type-safe code.generics make it possible that can work with different data types without having to duplicate code.
+
 
