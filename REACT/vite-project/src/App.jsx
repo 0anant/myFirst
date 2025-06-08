@@ -1,13 +1,13 @@
+import UserStatus from "./UserStatus/UserStatus";
+import Weather from "./Weather/Weather";
 
-import ProductList from "./ProductList/ProductList.jsx";
-import UserList from "./UserList/UserList.jsx";
 
 const App = () => {
   return (
-   <div>
-   <UserList />
-    <ProductList />
-   </div>
+    <section>
+    <Weather />
+    <UserStatus isLoggedIn = {true} isAdmin = {true} />
+   </section>
   );
 };
 
