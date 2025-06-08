@@ -1,12 +1,12 @@
-import Greeting from "./Greetinng/Greeting.jsx";
-import ProductInfo from "./ProductInfo/ProductInfo.jsx";
+
+import ProductList from "./ProductList/ProductList.jsx";
+import UserList from "./UserList/UserList.jsx";
 
 const App = () => {
   return (
    <div>
-    <Greeting />
-    <ProductInfo />
-    
+   <UserList />
+    <ProductList />
    </div>
   );
 };
