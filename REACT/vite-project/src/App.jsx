@@ -1,11 +1,13 @@
-import WelcomeMessage from "./WelMessage/WelcomeMessage";
+import Greeting from "./Greetinng/Greeting.jsx";
+import ProductInfo from "./ProductInfo/ProductInfo.jsx";
 
 const App = () => {
   return (
-    <div>
-      <WelcomeMessage />
-      
-    </div>
+   <div>
+    <Greeting />
+    <ProductInfo />
+    
+   </div>
   );
 };
 
