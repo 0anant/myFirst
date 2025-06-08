@@ -1,12 +1,12 @@
-import UserStatus from "./UserStatus/UserStatus";
-import Weather from "./Weather/Weather";
+import { FaComputer } from "react-icons/fa6";
+
 
 
 const App = () => {
+
   return (
     <section>
-    <Weather />
-    <UserStatus isLoggedIn = {true} isAdmin = {true} />
+     <FaComputer />
    </section>
   );
 };
